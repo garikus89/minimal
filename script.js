@@ -34,4 +34,31 @@ backToTop();
     return false;
 });
 
-})
+//Validate
+
+function valideForms(form){
+    $('.form-form').validate({
+        rules: {
+            Full_name: "required",
+            Email_adress: {
+                required: true,
+                email: true
+            },
+            Message: "required"
+        },
+        messages: {
+            Full_name: "Пожалуйста, введите корректное имя",
+            Email_adress: {
+              required: "Введите почту",
+              email: "Формат почты должен быть: example@yandex.ru"
+            },
+            Message: "Введите сообщение"
+          }
+    });
+};
+
+valideForms('.form-form');
+
+
+
+});

@@ -316,6 +316,7 @@ i{
 }
 .form{
   width: 100%;
+  min-height: 740px;
 }
 .container-form{
   position: relative;
@@ -344,11 +345,24 @@ i{
   font-weight: bold;
 }
 .container-form-form{
-  height: 343px;
+  min-height: 343px;
   width: 573px;
   text-align: center;
   margin: auto;
   color: white;
+}
+.form-form{
+  min-height: 343px;
+}
+.error{
+  border: 1px solid red;
+  color: burlywood;
+}
+label.error{
+  color: burlywood;
+  border: none;
+  display: block;
+  margin-bottom: 8px;
 }
 .full_name{
   width: 559px;
